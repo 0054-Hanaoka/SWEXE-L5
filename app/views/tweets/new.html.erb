@@ -1,0 +1,14 @@
+<%= form_with model: @tweet, local: true do |h| %>
+  <p>
+    <%= h.label :user_id, "ユーザーID" %><br>
+    <%= h.number_field :user_id %>
+  </p>
+
+  <p>
+    <%= h.label :message, "メッセージ" %><br>
+    <%= h.text_field :message %>
+  </p>
+
+  <%= h.submit "作成" %>
+<% end %>
+

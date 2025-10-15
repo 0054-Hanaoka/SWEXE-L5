@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "tweets/index"
+  get "tweets/new"
+  get "tweets/create"
+  get "tweets/destroy"
   resources :users
   root 'users#index'
 
