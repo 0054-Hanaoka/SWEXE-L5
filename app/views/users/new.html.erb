@@ -1,0 +1,10 @@
+<%= form_with model: @user, local: true do |f| %>
+  <%= f.label :uid %>
+  <%= f.text_field :uid %>
+  <%= f.label :pass %>
+  <%= f.password_field :pass %>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <%= f.submit '登録' %>
+<% end %>
+

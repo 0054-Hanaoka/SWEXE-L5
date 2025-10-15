@@ -1,0 +1,8 @@
+<% @users.each do |u| %>
+  <p>
+    <%= u.uid %> | <%= u.pass %><br>
+    <%= link_to '削除', user_path(u),  data: {turbo_method: :delete, turbo_confirm: "本当に削除しますか？"} %>
+  </p>
+<% end %>
+
+<%= link_to '新規登録', new_user_path %>
